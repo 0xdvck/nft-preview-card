@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @layer base {
+        body {
+          font-family: "Outfit", system-ui, sans-serif;
+        }
+
+        .text-cyan {
+          color: hsl(178, 100%, 50%);
+        }
+
+        .text-grey {
+          color: hsl(215, 22%, 56%);
+        }
+
+        .bg-very-dark-blue {
+          background-color: hsl(217, 54%, 11%);
+        }
+
+        .bg-very-dark-blue-card {
+          background-color: hsl(216, 50%, 16%);
+        }
+
+        .bg-very-dark-blue-line {
+          background-color: hsl(215, 32%, 27%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="w-dvw h-dvh bg-very-dark-blue md:pt-0 md:flex md:items-center pt-16"
+    >
+      <div
+        class="content container bg-very-dark-blue-card max-w-[20.6rem] max-h-[34.8rem] p-6 mx-auto rounded-md"
+      >
+        <div
+          class="content__image max-w-[27.8rem] mb-7 rounded-md overflow-hidden"
+        >
+          <img src="./images/image-equilibrium.jpg" alt="" />
+        </div>
+        <div class="content__details">
+          <div class="content__title text-xl mb-6 text-white font-normal">
+            Equilibrium #3429
+          </div>
+          <div class="content__description mb-5 font-light text-base text-grey">
+            Our Equilibrium collection promotes balance and calm.
+          </div>
+          <div class="content__info flex justify-between">
+            <div
+              class="content__price flex items-center gap-x-1.5 text-sm text-cyan font-bold"
+            >
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                  fill="#00FFF8"
+                />
+              </svg>
+              0.041 ETH
+            </div>
+            <div
+              class="content__time-left flex items-center font-light text-sm gap-x-1.5 text-grey tracking-wide"
+            >
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                  fill="#8BACD9"
+                />
+              </svg>
+              3 days left
+            </div>
+          </div>
+        </div>
+        <hr class="h-px mt-5 mb-4 bg-very-dark-blue-line border-0" />
+        <div class="content__creator flex gap-x-4">
+          <div
+            class="content__creator-avatar overflow-hidden max-w-8 rounded-full border border-white"
+          >
+            <img src="./images/image-avatar.png" alt="" />
+          </div>
+          <div class="content__creator-name text-base font-light text-grey">
+            Creation of <span class="text-white"> Jules Wyvern </span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
